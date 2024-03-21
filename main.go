@@ -39,6 +39,7 @@ func main() {
 	imageContainer := container.New(layout.NewCenterLayout(), defaultChordImage)
 
 	// Create a dropdown widget for chords
+	// NOTE: These lines were created with the help of chat.openai.com
 	chordDropdown := widget.NewSelect(chords, func(selectedChord string) {
 		// Load and display the corresponding chord diagram image
 		chordImage := loadChordImage(selectedChord)
